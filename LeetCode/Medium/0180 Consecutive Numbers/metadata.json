@@ -1,0 +1,10 @@
+{
+  "code": "# Write your MySQL query statement below\nSELECT DISTINCT\n    l1.num AS ConsecutiveNums\nFROM Logs l1\nJOIN Logs l2\nON l1.id = l2.id - 1\nJOIN Logs l3\nON l2.id = l3.id - 1\nWHERE l1.num = l2.num\nAND l2.num = l3.num;",
+  "difficulty": "Medium",
+  "language": "unknown",
+  "platform": "LeetCode",
+  "problemName": "Consecutive Numbers",
+  "problemNumber": "180",
+  "submissionDate": "2026-07-24T15:18:35.055Z",
+  "submissionUrl": "https://leetcode.com/problems/consecutive-numbers/submissions/2079732076/?envType=study-plan-v2&envId=top-sql-50"
+}
