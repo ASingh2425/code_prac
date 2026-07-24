@@ -1,0 +1,10 @@
+{
+  "code": "# Write your MySQL query statement below\nSELECT\n    MAX(salary) AS SecondHighestSalary\nFROM Employee\nWHERE salary < (\n    SELECT MAX(salary)\n    FROM Employee\n);",
+  "difficulty": "Medium",
+  "language": "unknown",
+  "platform": "LeetCode",
+  "problemName": "Second Highest Salary",
+  "problemNumber": "176",
+  "submissionDate": "2026-07-24T17:01:52.781Z",
+  "submissionUrl": "https://leetcode.com/problems/second-highest-salary/submissions/2079856404/?envType=study-plan-v2&envId=top-sql-50"
+}
