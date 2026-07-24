@@ -1,0 +1,10 @@
+{
+  "code": "# Write your MySQL query statement below\nSELECT\n    sell_date,\n    COUNT(DISTINCT product) AS num_sold,\n    GROUP_CONCAT(DISTINCT product ORDER BY product SEPARATOR ',') AS products\nFROM Activities\nGROUP BY sell_date\nORDER BY sell_date;",
+  "difficulty": "Easy",
+  "language": "unknown",
+  "platform": "LeetCode",
+  "problemName": "Group Sold Products By The Date",
+  "problemNumber": "1484",
+  "submissionDate": "2026-07-24T17:02:37.368Z",
+  "submissionUrl": "https://leetcode.com/problems/group-sold-products-by-the-date/submissions/2079857178/?envType=study-plan-v2&envId=top-sql-50"
+}
