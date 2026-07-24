@@ -1,0 +1,10 @@
+{
+  "code": "# Write your MySQL query statement below\nSELECT\n    customer_id\nFROM Customer\nGROUP BY customer_id\nHAVING COUNT(DISTINCT product_key) = (\n    SELECT COUNT(*)\n    FROM Product\n);",
+  "difficulty": "Medium",
+  "language": "unknown",
+  "platform": "LeetCode",
+  "problemName": "Customers Who Bought All Products",
+  "problemNumber": "1045",
+  "submissionDate": "2026-07-24T15:14:50.381Z",
+  "submissionUrl": "https://leetcode.com/problems/customers-who-bought-all-products/submissions/2079728002/?envType=study-plan-v2&envId=top-sql-50"
+}
