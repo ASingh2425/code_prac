@@ -1,0 +1,10 @@
+{
+  "code": "# Write your MySQL query statement below\nSELECT\n    d.name AS Department,\n    e.name AS Employee,\n    e.salary AS Salary\nFROM (\n    SELECT\n        *,\n        DENSE_RANK() OVER (\n            PARTITION BY departmentId\n            ORDER BY salary DESC\n        ) AS salary_rank\n    FROM Employee\n) e\nJOIN Department d\nON e.departmentId = d.id\nWHERE salary_rank <= 3;",
+  "difficulty": "Hard",
+  "language": "unknown",
+  "platform": "LeetCode",
+  "problemName": "Department Top Three Salaries",
+  "problemNumber": "185",
+  "submissionDate": "2026-07-24T18:10:51.481Z",
+  "submissionUrl": "https://leetcode.com/problems/department-top-three-salaries/submissions/2079948238/?envType=study-plan-v2&envId=top-sql-50"
+}
