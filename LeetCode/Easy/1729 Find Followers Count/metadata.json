@@ -1,0 +1,10 @@
+{
+  "code": "# Write your MySQL query statement below\nSELECT\n    user_id,\n    COUNT(follower_id) AS followers_count\nFROM Followers\nGROUP BY user_id\nORDER BY user_id;",
+  "difficulty": "Easy",
+  "language": "unknown",
+  "platform": "LeetCode",
+  "problemName": "Find Followers Count",
+  "problemNumber": "1729",
+  "submissionDate": "2026-07-24T15:13:38.104Z",
+  "submissionUrl": "https://leetcode.com/problems/find-followers-count/submissions/2079726479/?envType=study-plan-v2&envId=top-sql-50"
+}
