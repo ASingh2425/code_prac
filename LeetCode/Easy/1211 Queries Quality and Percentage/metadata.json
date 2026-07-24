@@ -1,0 +1,10 @@
+{
+  "code": "# Write your MySQL query statement below\nSELECT\n    query_name,\n    ROUND(AVG(rating / position), 2) AS quality,\n    ROUND(AVG(rating < 3) * 100, 2) AS poor_query_percentage\nFROM Queries\nGROUP BY query_name;",
+  "difficulty": "Easy",
+  "language": "unknown",
+  "platform": "LeetCode",
+  "problemName": "Queries Quality and Percentage",
+  "problemNumber": "1211",
+  "submissionDate": "2026-07-24T15:06:19.010Z",
+  "submissionUrl": "https://leetcode.com/problems/queries-quality-and-percentage/submissions/2079718552/?envType=study-plan-v2&envId=top-sql-50"
+}
