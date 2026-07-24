@@ -1,0 +1,10 @@
+{
+  "code": "# Write your MySQL query statement below\nSELECT\n    s.student_id,\n    s.student_name,\n    sub.subject_name,\n    COUNT(e.student_id) AS attended_exams\nFROM Students s\nCROSS JOIN Subjects sub\nLEFT JOIN Examinations e\nON s.student_id = e.student_id\nAND sub.subject_name = e.subject_name\nGROUP BY\n    s.student_id,\n    s.student_name,\n    sub.subject_name\nORDER BY\n    s.student_id,\n    sub.subject_name;",
+  "difficulty": "Easy",
+  "language": "unknown",
+  "platform": "LeetCode",
+  "problemName": "Students and Examinations",
+  "problemNumber": "1280",
+  "submissionDate": "2026-07-24T15:00:03.798Z",
+  "submissionUrl": "https://leetcode.com/problems/students-and-examinations/submissions/2079711723/?envType=study-plan-v2&envId=top-sql-50"
+}
