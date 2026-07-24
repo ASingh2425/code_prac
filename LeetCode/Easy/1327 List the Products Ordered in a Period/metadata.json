@@ -1,0 +1,10 @@
+{
+  "code": "# Write your MySQL query statement below\nSELECT\n    p.product_name,\n    SUM(o.unit) AS unit\nFROM Products p\nJOIN Orders o\nON p.product_id = o.product_id\nWHERE o.order_date BETWEEN '2020-02-01' AND '2020-02-29'\nGROUP BY\n    p.product_id,\n    p.product_name\nHAVING SUM(o.unit) >= 100;",
+  "difficulty": "Easy",
+  "language": "unknown",
+  "platform": "LeetCode",
+  "problemName": "List the Products Ordered in a Period",
+  "problemNumber": "1327",
+  "submissionDate": "2026-07-24T17:03:32.343Z",
+  "submissionUrl": "https://leetcode.com/problems/list-the-products-ordered-in-a-period/submissions/2079858619/?envType=study-plan-v2&envId=top-sql-50"
+}
