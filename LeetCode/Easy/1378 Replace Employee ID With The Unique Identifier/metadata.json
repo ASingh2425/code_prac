@@ -1,0 +1,10 @@
+{
+  "code": "# Write your MySQL query statement below\nselect EmployeeUNI.unique_id, Employees.name from Employees left join EmployeeUNI ON Employees.id = EmployeeUNI.id;",
+  "difficulty": "Easy",
+  "language": "unknown",
+  "platform": "LeetCode",
+  "problemName": "Replace Employee ID With The Unique Identifier",
+  "problemNumber": "1378",
+  "submissionDate": "2026-07-24T14:36:31.164Z",
+  "submissionUrl": "https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/submissions/2079686450/?envType=study-plan-v2&envId=top-sql-50"
+}
