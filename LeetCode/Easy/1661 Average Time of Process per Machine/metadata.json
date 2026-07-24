@@ -1,0 +1,10 @@
+{
+  "code": "# Write your MySQL query statement below\nSELECT\n    a.machine_id,\n    ROUND(AVG(b.timestamp - a.timestamp), 3) AS processing_time\nFROM Activity a\nJOIN Activity b\nON a.machine_id = b.machine_id\nAND a.process_id = b.process_id\nWHERE a.activity_type = 'start'\nAND b.activity_type = 'end'\nGROUP BY a.machine_id;",
+  "difficulty": "Easy",
+  "language": "unknown",
+  "platform": "LeetCode",
+  "problemName": "Average Time of Process per Machine",
+  "problemNumber": "1661",
+  "submissionDate": "2026-07-24T14:56:47.598Z",
+  "submissionUrl": "https://leetcode.com/problems/average-time-of-process-per-machine/submissions/2079708232/?envType=study-plan-v2&envId=top-sql-50"
+}
