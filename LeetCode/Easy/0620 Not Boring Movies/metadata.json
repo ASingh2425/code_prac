@@ -1,0 +1,10 @@
+{
+  "code": "# Write your MySQL query statement below\nSELECT *\nFROM Cinema\nWHERE id % 2 = 1\nAND description <> 'boring'\nORDER BY rating DESC;",
+  "difficulty": "Easy",
+  "language": "unknown",
+  "platform": "LeetCode",
+  "problemName": "Not Boring Movies",
+  "problemNumber": "620",
+  "submissionDate": "2026-07-24T15:03:05.147Z",
+  "submissionUrl": "https://leetcode.com/problems/not-boring-movies/submissions/2079715062/?envType=study-plan-v2&envId=top-sql-50"
+}
