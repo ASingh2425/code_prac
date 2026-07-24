@@ -1,0 +1,10 @@
+{
+  "code": "# Write your MySQL query statement below\nSELECT\n    s.product_id,\n    s.year AS first_year,\n    s.quantity,\n    s.price\nFROM Sales s\nJOIN (\n    SELECT\n        product_id,\n        MIN(year) AS first_year\n    FROM Sales\n    GROUP BY product_id\n) f\nON s.product_id = f.product_id\nAND s.year = f.first_year;",
+  "difficulty": "Medium",
+  "language": "unknown",
+  "platform": "LeetCode",
+  "problemName": "Product Sales Analysis III",
+  "problemNumber": "1070",
+  "submissionDate": "2026-07-24T15:11:56.149Z",
+  "submissionUrl": "https://leetcode.com/problems/product-sales-analysis-iii/submissions/2079724817/?envType=study-plan-v2&envId=top-sql-50"
+}
