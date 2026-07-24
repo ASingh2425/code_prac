@@ -1,0 +1,10 @@
+{
+  "code": "# Write your MySQL query statement below\nSELECT\n    id,\n    COUNT(*) AS num\nFROM (\n    SELECT requester_id AS id\n    FROM RequestAccepted\n\n    UNION ALL\n\n    SELECT accepter_id AS id\n    FROM RequestAccepted\n) AS Friends\nGROUP BY id\nORDER BY num DESC\nLIMIT 1;",
+  "difficulty": "Medium",
+  "language": "unknown",
+  "platform": "LeetCode",
+  "problemName": "Friend Requests II: Who Has the Most Friends",
+  "problemNumber": "602",
+  "submissionDate": "2026-07-24T15:24:30.985Z",
+  "submissionUrl": "https://leetcode.com/problems/friend-requests-ii-who-has-the-most-friends/submissions/2079738451/?envType=study-plan-v2&envId=top-sql-50"
+}
