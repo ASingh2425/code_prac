@@ -1,0 +1,10 @@
+{
+  "code": "SELECT v.customer_id, COUNT(*) AS count_no_trans\nFROM Visits v\nLEFT JOIN Transactions t\nON v.visit_id = t.visit_id\nWHERE t.transaction_id IS NULL\nGROUP BY v.customer_id;",
+  "difficulty": "Easy",
+  "language": "unknown",
+  "platform": "LeetCode",
+  "problemName": "Customer Who Visited but Did Not Make Any Transactions",
+  "problemNumber": "1581",
+  "submissionDate": "2026-07-24T14:49:58.472Z",
+  "submissionUrl": "https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/submissions/2079700953/?envType=study-plan-v2&envId=top-sql-50"
+}
