@@ -1,0 +1,10 @@
+{
+  "code": "# Write your MySQL query statement below\nselect name, population, area from World where area >= 3000000 or population >= 25000000;",
+  "difficulty": "Easy",
+  "language": "unknown",
+  "platform": "LeetCode",
+  "problemName": "Big Countries",
+  "problemNumber": "595",
+  "submissionDate": "2026-07-24T14:21:12.066Z",
+  "submissionUrl": "https://leetcode.com/problems/article-views-i/description/?envType=study-plan-v2&envId=top-sql-50"
+}
