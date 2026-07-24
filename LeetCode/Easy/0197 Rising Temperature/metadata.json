@@ -1,0 +1,10 @@
+{
+  "code": "SELECT w1.id\nFROM Weather w1\nJOIN Weather w2\nON DATEDIFF(w1.recordDate, w2.recordDate) = 1\nWHERE w1.temperature > w2.temperature;",
+  "difficulty": "Easy",
+  "language": "unknown",
+  "platform": "LeetCode",
+  "problemName": "Rising Temperature",
+  "problemNumber": "197",
+  "submissionDate": "2026-07-24T14:55:10.753Z",
+  "submissionUrl": "https://leetcode.com/problems/rising-temperature/submissions/2079706586/?envType=study-plan-v2&envId=top-sql-50"
+}
