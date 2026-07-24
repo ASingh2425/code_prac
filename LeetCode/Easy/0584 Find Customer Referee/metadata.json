@@ -1,0 +1,10 @@
+{
+  "code": "# Write your MySQL query statement below\nselect name from Customer where referee_id != 2 or referee_id is null;",
+  "difficulty": "Easy",
+  "language": "unknown",
+  "platform": "LeetCode",
+  "problemName": "Find Customer Referee",
+  "problemNumber": "584",
+  "submissionDate": "2026-07-24T14:18:00.940Z",
+  "submissionUrl": "https://leetcode.com/problems/find-customer-referee/submissions/2079666142/?envType=study-plan-v2&envId=top-sql-50"
+}
