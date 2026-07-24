@@ -1,0 +1,10 @@
+{
+  "code": "SELECT\n    user_id,\n    name,\n    mail\nFROM Users\nWHERE REGEXP_LIKE(\n    mail,\n    '^[A-Za-z][A-Za-z0-9_.-]*@leetcode\\\\.com$',\n    'c'\n);",
+  "difficulty": "Easy",
+  "language": "unknown",
+  "platform": "LeetCode",
+  "problemName": "Find Users With Valid E-Mails",
+  "problemNumber": "1517",
+  "submissionDate": "2026-07-24T17:07:16.327Z",
+  "submissionUrl": "https://leetcode.com/problems/find-users-with-valid-e-mails/submissions/2079863297/?envType=study-plan-v2&envId=top-sql-50"
+}
