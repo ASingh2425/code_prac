@@ -1,0 +1,10 @@
+{
+  "code": "# Write your MySQL query statement below\nselect product_id from Products where low_fats='Y' and recyclable='Y';",
+  "difficulty": "Easy",
+  "language": "unknown",
+  "platform": "LeetCode",
+  "problemName": "Recyclable and Low Fat Products",
+  "problemNumber": "1757",
+  "submissionDate": "2026-07-24T14:13:24.401Z",
+  "submissionUrl": "https://leetcode.com/problems/recyclable-and-low-fat-products/submissions/2079661404/?envType=study-plan-v2&envId=top-sql-50"
+}
