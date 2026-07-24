@@ -1,0 +1,10 @@
+{
+  "code": "# Write your MySQL query statement below\nSELECT\n    patient_id,\n    patient_name,\n    conditions\nFROM Patients\nWHERE conditions LIKE 'DIAB1%'\n   OR conditions LIKE '% DIAB1%';",
+  "difficulty": "Easy",
+  "language": "unknown",
+  "platform": "LeetCode",
+  "problemName": "Patients With a Condition",
+  "problemNumber": "1527",
+  "submissionDate": "2026-07-24T17:00:15.269Z",
+  "submissionUrl": "https://leetcode.com/problems/patients-with-a-condition/submissions/2079854338/?envType=study-plan-v2&envId=top-sql-50"
+}
