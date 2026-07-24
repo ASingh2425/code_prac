@@ -1,0 +1,10 @@
+{
+  "code": "# Write your MySQL query statement below\nSELECT\n    e.name,\n    b.bonus\nFROM Employee e\nLEFT JOIN Bonus b\nON e.empId = b.empId\nWHERE b.bonus < 1000\n   OR b.bonus IS NULL;",
+  "difficulty": "Easy",
+  "language": "unknown",
+  "platform": "LeetCode",
+  "problemName": "Employee Bonus",
+  "problemNumber": "577",
+  "submissionDate": "2026-07-24T14:58:07.602Z",
+  "submissionUrl": "https://leetcode.com/problems/employee-bonus/submissions/2079709658/?envType=study-plan-v2&envId=top-sql-50"
+}
