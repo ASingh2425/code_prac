@@ -1,0 +1,10 @@
+{
+  "code": "# Write your MySQL query statement below\nSELECT\n    ROUND(\n        AVG(order_date = customer_pref_delivery_date) * 100,\n        2\n    ) AS immediate_percentage\nFROM Delivery\nWHERE (customer_id, order_date) IN (\n    SELECT\n        customer_id,\n        MIN(order_date)\n    FROM Delivery\n    GROUP BY customer_id\n);",
+  "difficulty": "Medium",
+  "language": "unknown",
+  "platform": "LeetCode",
+  "problemName": "Immediate Food Delivery II",
+  "problemNumber": "1174",
+  "submissionDate": "2026-07-24T15:07:51.937Z",
+  "submissionUrl": "https://leetcode.com/problems/immediate-food-delivery-ii/submissions/2079720399/?envType=study-plan-v2&envId=top-sql-50"
+}
