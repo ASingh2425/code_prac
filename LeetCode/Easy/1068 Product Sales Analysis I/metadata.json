@@ -1,0 +1,10 @@
+{
+  "code": "# Write your MySQL query statement below\nselect Product.product_name, Sales.year, Sales.price from Sales left join Product on Product.product_id = Sales.product_id;   ",
+  "difficulty": "Easy",
+  "language": "unknown",
+  "platform": "LeetCode",
+  "problemName": "Product Sales Analysis I",
+  "problemNumber": "1068",
+  "submissionDate": "2026-07-24T14:44:41.635Z",
+  "submissionUrl": "https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/description/?envType=study-plan-v2&envId=top-sql-50"
+}
