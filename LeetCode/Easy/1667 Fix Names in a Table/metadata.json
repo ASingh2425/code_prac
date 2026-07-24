@@ -1,0 +1,10 @@
+{
+  "code": "# Write your MySQL query statement below\nSELECT\n    user_id,\n    CONCAT(\n        UPPER(LEFT(name, 1)),\n        LOWER(SUBSTRING(name, 2))\n    ) AS name\nFROM Users\nORDER BY user_id;",
+  "difficulty": "Easy",
+  "language": "unknown",
+  "platform": "LeetCode",
+  "problemName": "Fix Names in a Table",
+  "problemNumber": "1667",
+  "submissionDate": "2026-07-24T16:59:24.325Z",
+  "submissionUrl": "https://leetcode.com/problems/fix-names-in-a-table/submissions/2079853119/?envType=study-plan-v2&envId=top-sql-50"
+}
