@@ -1,0 +1,10 @@
+{
+  "code": "# Write your MySQL query statement below\nselect distinct author_id as id from Views where author_id = viewer_id order by author_id;",
+  "difficulty": "Easy",
+  "language": "unknown",
+  "platform": "LeetCode",
+  "problemName": "Article Views I",
+  "problemNumber": "1148",
+  "submissionDate": "2026-07-24T14:25:54.093Z",
+  "submissionUrl": "https://leetcode.com/problems/article-views-i/submissions/2079675248/?envType=study-plan-v2&envId=top-sql-50"
+}
