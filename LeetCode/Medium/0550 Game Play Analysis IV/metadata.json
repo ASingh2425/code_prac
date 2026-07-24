@@ -1,0 +1,10 @@
+{
+  "code": "# Write your MySQL query statement below\nSELECT\n    ROUND(\n        AVG(a.event_date IS NOT NULL),\n        2\n    ) AS fraction\nFROM (\n    SELECT\n        player_id,\n        MIN(event_date) AS first_login\n    FROM Activity\n    GROUP BY player_id\n) f\nLEFT JOIN Activity a\nON f.player_id = a.player_id\nAND a.event_date = DATE_ADD(f.first_login, INTERVAL 1 DAY);",
+  "difficulty": "Medium",
+  "language": "unknown",
+  "platform": "LeetCode",
+  "problemName": "Game Play Analysis IV",
+  "problemNumber": "550",
+  "submissionDate": "2026-07-24T15:08:48.681Z",
+  "submissionUrl": "https://leetcode.com/problems/game-play-analysis-iv/submissions/2079721348/?envType=study-plan-v2&envId=top-sql-50"
+}
