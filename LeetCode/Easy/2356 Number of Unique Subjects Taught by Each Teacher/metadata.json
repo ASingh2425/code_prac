@@ -1,0 +1,10 @@
+{
+  "code": "# Write your MySQL query statement below\nSELECT\n    teacher_id,\n    COUNT(DISTINCT subject_id) AS cnt\nFROM Teacher\nGROUP BY teacher_id;",
+  "difficulty": "Easy",
+  "language": "unknown",
+  "platform": "LeetCode",
+  "problemName": "Number of Unique Subjects Taught by Each Teacher",
+  "problemNumber": "2356",
+  "submissionDate": "2026-07-24T15:10:07.881Z",
+  "submissionUrl": "https://leetcode.com/problems/number-of-unique-subjects-taught-by-each-teacher/submissions/2079722645/?envType=study-plan-v2&envId=top-sql-50"
+}
