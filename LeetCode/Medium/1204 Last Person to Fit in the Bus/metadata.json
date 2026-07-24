@@ -1,0 +1,10 @@
+{
+  "code": "# Write your MySQL query statement below\nSELECT person_name\nFROM (\n    SELECT\n        person_name,\n        turn,\n        SUM(weight) OVER (ORDER BY turn) AS total_weight\n    FROM Queue\n) q\nWHERE total_weight <= 1000\nORDER BY turn DESC\nLIMIT 1;",
+  "difficulty": "Medium",
+  "language": "unknown",
+  "platform": "LeetCode",
+  "problemName": "Last Person to Fit in the Bus",
+  "problemNumber": "1204",
+  "submissionDate": "2026-07-24T15:20:06.839Z",
+  "submissionUrl": "https://leetcode.com/problems/last-person-to-fit-in-the-bus/submissions/2079733685/?envType=study-plan-v2&envId=top-sql-50"
+}
