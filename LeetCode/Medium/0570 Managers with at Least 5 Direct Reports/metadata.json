@@ -1,0 +1,10 @@
+{
+  "code": "# Write your MySQL query statement below\nSELECT\n    e.name\nFROM Employee e\nJOIN Employee emp\nON e.id = emp.managerId\nGROUP BY\n    e.id,\n    e.name\nHAVING COUNT(emp.id) >= 5;",
+  "difficulty": "Medium",
+  "language": "unknown",
+  "platform": "LeetCode",
+  "problemName": "Managers with at Least 5 Direct Reports",
+  "problemNumber": "570",
+  "submissionDate": "2026-07-24T15:01:03.763Z",
+  "submissionUrl": "https://leetcode.com/problems/managers-with-at-least-5-direct-reports/?envType=study-plan-v2&envId=top-sql-50"
+}
