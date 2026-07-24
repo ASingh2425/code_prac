@@ -1,0 +1,10 @@
+{
+  "code": "# Write your MySQL query statement below\n(\n    SELECT\n        u.name AS results\n    FROM Users u\n    JOIN MovieRating mr\n        ON u.user_id = mr.user_id\n    GROUP BY u.user_id, u.name\n    ORDER BY COUNT(*) DESC, u.name\n    LIMIT 1\n)\n\nUNION ALL\n\n(\n    SELECT\n        m.title AS results\n    FROM Movies m\n    JOIN MovieRating mr\n        ON m.movie_id = mr.movie_id\n    WHERE mr.created_at BETWEEN '2020-02-01' AND '2020-02-29'\n    GROUP BY m.movie_id, m.title\n    ORDER BY AVG(mr.rating) DESC, m.title\n    LIMIT 1\n);",
+  "difficulty": "Medium",
+  "language": "unknown",
+  "platform": "LeetCode",
+  "problemName": "Movie Rating",
+  "problemNumber": "1341",
+  "submissionDate": "2026-07-24T15:22:59.570Z",
+  "submissionUrl": "https://leetcode.com/problems/movie-rating/submissions/2079736892/?envType=study-plan-v2&envId=top-sql-50"
+}
