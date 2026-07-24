@@ -1,0 +1,10 @@
+{
+  "code": "# Write your MySQL query statement below\nSELECT\n    p.project_id,\n    ROUND(AVG(e.experience_years), 2) AS average_years\nFROM Project p\nJOIN Employee e\nON p.employee_id = e.employee_id\nGROUP BY p.project_id;",
+  "difficulty": "Easy",
+  "language": "unknown",
+  "platform": "LeetCode",
+  "problemName": "Project Employees I",
+  "problemNumber": "1075",
+  "submissionDate": "2026-07-24T15:04:45.213Z",
+  "submissionUrl": "https://leetcode.com/problems/project-employees-i/submissions/2079716874/?envType=study-plan-v2&envId=top-sql-50"
+}
