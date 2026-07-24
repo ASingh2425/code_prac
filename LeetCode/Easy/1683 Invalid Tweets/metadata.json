@@ -1,0 +1,10 @@
+{
+  "code": "# Write your MySQL query statement below\nselect tweet_id from Tweets where LENGTH(content) > 15;",
+  "difficulty": "Easy",
+  "language": "unknown",
+  "platform": "LeetCode",
+  "problemName": "Invalid Tweets",
+  "problemNumber": "1683",
+  "submissionDate": "2026-07-24T14:29:00.264Z",
+  "submissionUrl": "https://leetcode.com/problems/invalid-tweets/submissions/2079678581/?envType=study-plan-v2&envId=top-sql-50"
+}
