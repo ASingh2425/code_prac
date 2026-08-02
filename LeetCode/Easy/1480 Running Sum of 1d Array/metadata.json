@@ -1,0 +1,10 @@
+{
+  "code": "class Solution {\n    public int[] runningSum(int[] nums) {\n        int[] run_sum = new int[nums.length];\n        for( int i = 0; i<nums.length; i++){\n            int sum = 0;\n            for( int j = 0 ; j<=i ; j++){\n                sum = sum + nums[j];\n            }\n            run_sum[i] = sum;\n        }\n        return run_sum;\n    }\n}",
+  "difficulty": "Easy",
+  "language": "java",
+  "platform": "LeetCode",
+  "problemName": "Running Sum of 1d Array",
+  "problemNumber": "1480",
+  "submissionDate": "2026-08-02T07:33:59.190Z",
+  "submissionUrl": "https://leetcode.com/problems/running-sum-of-1d-array/submissions/2091054153/"
+}
