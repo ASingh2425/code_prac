@@ -1,0 +1,9 @@
+{
+  "code": "#!/bin/python3\n\nimport sys\n\nt = int(input())\nfor _ in range(t):\n    n = int(input())\n    a,b= 2,8\n    total = 0\n    while a<=n:\n        total += a\n        a,b = b, 4*b+a\n    print(total)",
+  "difficulty": "",
+  "language": "unknown",
+  "platform": "HackerRank",
+  "problemName": "Project Euler #2: Even Fibonacci numbers",
+  "submissionDate": "2026-08-04T13:04:55.601Z",
+  "submissionUrl": "https://www.hackerrank.com/contests/projecteuler/challenges/euler002/problem?isFullScreen=true"
+}
