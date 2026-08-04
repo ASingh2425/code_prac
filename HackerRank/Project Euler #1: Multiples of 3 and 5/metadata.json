@@ -1,9 +1,9 @@
 {
-  "code": "#!/bin/python3\n\nimport sys\n\n\nt = int(input().strip())\nfor a0 in range(t):\n    n = int(input().strip())\n    sum = 0\n    for i in range(1,n):\n        if(i%3==0 or i%5==0):\n            sum = sum + i\n    print(sum)",
+  "code": "#!/bin/python3\n\nt = int(input())\n\nfor _ in range(t):\n    n = int(input())\n\n    def sum_of_multiples(x):\n        k = (n - 1) // x\n        return x * k * (k + 1) // 2\n\n    ans = sum_of_multiples(3) + sum_of_multiples(5) - sum_of_multiples(15)\n\n    print(ans)",
   "difficulty": "",
   "language": "unknown",
   "platform": "HackerRank",
   "problemName": "Project Euler #1: Multiples of 3 and 5",
-  "submissionDate": "2026-08-04T12:49:45.191Z",
+  "submissionDate": "2026-08-04T12:55:29.675Z",
   "submissionUrl": "https://www.hackerrank.com/contests/projecteuler/challenges/euler001/problem?isFullScreen=true"
 }
