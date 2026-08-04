@@ -1,0 +1,9 @@
+{
+  "code": "#!/bin/python3\n\nimport sys\n\n\nt = int(input().strip())\nfor a0 in range(t):\n    n = int(input().strip())\n    sum = 0\n    for i in range(1,n):\n        if(i%3==0 or i%5==0):\n            sum = sum + i\n    print(sum)",
+  "difficulty": "",
+  "language": "unknown",
+  "platform": "HackerRank",
+  "problemName": "Project Euler #1: Multiples of 3 and 5",
+  "submissionDate": "2026-08-04T12:49:45.191Z",
+  "submissionUrl": "https://www.hackerrank.com/contests/projecteuler/challenges/euler001/problem?isFullScreen=true"
+}
