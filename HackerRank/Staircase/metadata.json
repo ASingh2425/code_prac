@@ -1,0 +1,9 @@
+{
+  "code": "#!/bin/python3\n\nimport math\nimport os\nimport random\nimport re\nimport sys\n\n#\n# Complete the 'staircase' function below.\n#\n# The function accepts INTEGER n as parameter.\n#\n\ndef staircase(n):\n    for i in range(1, n + 1):\n        print(\" \" * (n - i) + \"#\" * i)\n\nif __name__ == '__main__':\n    n = int(input().strip())\n\n    staircase(n)\n",
+  "difficulty": "",
+  "language": "unknown",
+  "platform": "HackerRank",
+  "problemName": "Staircase",
+  "submissionDate": "2026-09-08T08:34:45.570Z",
+  "submissionUrl": "https://www.hackerrank.com/challenges/staircase/problem?isFullScreen=true"
+}
