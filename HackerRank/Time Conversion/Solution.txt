@@ -22,7 +22,7 @@ def timeConversion(s):
     else:
         if hour!=12:
             hour+=12
-    return str(hour)+s[2:-2]
+    return f"{hour:02d}" + s[2:-2]
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
