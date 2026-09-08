@@ -1,0 +1,9 @@
+{
+  "code": "#!/bin/python3\n\nimport math\nimport os\nimport random\nimport re\nimport sys\n\n#\n# Complete the 'diagonalDifference' function below.\n#\n# The function is expected to return an INTEGER.\n# The function accepts 2D_INTEGER_ARRAY arr as parameter.\n#\n\ndef diagonalDifference(arr):\n    sum_left=0\n    sum_right=0\n    diff=0\n    for i in range(len(arr)):\n        sum_left=sum_left+arr[i][i]\n        sum_right=sum_right+arr[i][n-1-i]\n        print(sum_left)\n        print(sum_right)\n    diff=abs(sum_left-sum_right)\n    return diff\n\nif __name__ == '__main__':\n    fptr = open(os.environ['OUTPUT_PATH'], 'w')\n\n    n = int(input().strip())\n\n    arr = []\n\n    for _ in range(n):\n        arr.append(list(map(int, input().rstrip().split())))\n\n    result = diagonalDifference(arr)\n\n    fptr.write(str(result) + '\\n')\n\n    fptr.close()\n",
+  "difficulty": "",
+  "language": "unknown",
+  "platform": "HackerRank",
+  "problemName": "Diagonal Difference",
+  "submissionDate": "2026-09-08T08:22:29.157Z",
+  "submissionUrl": "https://www.hackerrank.com/challenges/diagonal-difference/problem?isFullScreen=true"
+}
