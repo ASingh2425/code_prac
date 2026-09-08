@@ -1,0 +1,9 @@
+{
+  "code": "#!/bin/python3\n\nimport math\nimport os\nimport random\nimport re\nimport sys\n\n#\n# Complete the 'compareTriplets' function below.\n#\n# The function is expected to return an INTEGER_ARRAY.\n# The function accepts following parameters:\n#  1. INTEGER_ARRAY a\n#  2. INTEGER_ARRAY b\n#\n\ndef compareTriplets(a, b):\n    result=[]\n    a_sum=0\n    b_sum=0\n    for i in range(len(a)):\n        if a[i]>b[i]:\n            a_sum=a_sum+1\n        if a[i]<b[i]:\n            b_sum=b_sum+1\n        if a[i]==b[i]:\n            continue\n    result.append(a_sum)\n    result.append(b_sum)\n    return result\n            \nif __name__ == '__main__':\n    fptr = open(os.environ['OUTPUT_PATH'], 'w')\n\n    a = list(map(int, input().rstrip().split()))\n\n    b = list(map(int, input().rstrip().split()))\n\n    result = compareTriplets(a, b)\n\n    fptr.write(' '.join(map(str, result)))\n    fptr.write('\\n')\n\n    fptr.close()\n",
+  "difficulty": "",
+  "language": "unknown",
+  "platform": "HackerRank",
+  "problemName": "Compare the Triplets",
+  "submissionDate": "2026-09-08T08:10:42.623Z",
+  "submissionUrl": "https://www.hackerrank.com/challenges/a-very-big-sum/problem?isFullScreen=true"
+}
