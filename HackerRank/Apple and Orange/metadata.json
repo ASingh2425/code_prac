@@ -1,0 +1,9 @@
+{
+  "code": "#!/bin/python3\n\nimport math\nimport os\nimport random\nimport re\nimport sys\n\n#\n# Complete the 'countApplesAndOranges' function below.\n#\n# The function accepts following parameters:\n#  1. INTEGER s\n#  2. INTEGER t\n#  3. INTEGER a\n#  4. INTEGER b\n#  5. INTEGER_ARRAY apples\n#  6. INTEGER_ARRAY oranges\n#\n\ndef countApplesAndOranges(s, t, a, b, apples, oranges):\n\n    apple_count = 0\n    orange_count = 0\n\n    for apple in apples:\n        position = a + apple\n\n        if s <= position <= t:\n            apple_count += 1\n\n    for orange in oranges:\n        position = b + orange\n\n        if s <= position <= t:\n            orange_count += 1\n\n    print(apple_count)\n    print(orange_count)\n\nif __name__ == '__main__':\n    first_multiple_input = input().rstrip().split()\n\n    s = int(first_multiple_input[0])\n\n    t = int(first_multiple_input[1])\n\n    second_multiple_input = input().rstrip().split()\n\n    a = int(second_multiple_input[0])\n\n    b = int(second_multiple_input[1])\n\n    third_multiple_input = input().rstrip().split()\n\n    m = int(third_multiple_input[0])\n\n    n = int(third_multiple_input[1])\n\n    apples = list(map(int, input().rstrip().split()))\n\n    oranges = list(map(int, input().rstrip().split()))\n\n    countApplesAndOranges(s, t, a, b, apples, oranges)\n",
+  "difficulty": "",
+  "language": "unknown",
+  "platform": "HackerRank",
+  "problemName": "Apple and Orange",
+  "submissionDate": "2026-09-08T13:41:30.487Z",
+  "submissionUrl": "https://www.hackerrank.com/challenges/apple-and-orange/problem?isFullScreen=true"
+}
