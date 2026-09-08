@@ -1,0 +1,9 @@
+{
+  "code": "#!/bin/python3\n\nimport math\nimport os\nimport random\nimport re\nimport sys\n\n#\n# Complete the 'gradingStudents' function below.\n#\n# The function is expected to return an INTEGER_ARRAY.\n# The function accepts INTEGER_ARRAY grades as parameter.\n#\n\ndef gradingStudents(grades):\n    result = []\n\n    for i in range(len(grades)):\n        grade = grades[i]\n\n        if grade >= 38:\n            next_multiple = ((grade // 5) + 1) * 5\n\n            if next_multiple - grade < 3:\n                grade = next_multiple\n\n        result.append(grade)\n\n    return result\n            \n\nif __name__ == '__main__':\n    fptr = open(os.environ['OUTPUT_PATH'], 'w')\n\n    grades_count = int(input().strip())\n\n    grades = []\n\n    for _ in range(grades_count):\n        grades_item = int(input().strip())\n        grades.append(grades_item)\n\n    result = gradingStudents(grades)\n\n    fptr.write('\\n'.join(map(str, result)))\n    fptr.write('\\n')\n\n    fptr.close()\n",
+  "difficulty": "",
+  "language": "unknown",
+  "platform": "HackerRank",
+  "problemName": "Grading Students",
+  "submissionDate": "2026-09-08T13:32:30.551Z",
+  "submissionUrl": "https://www.hackerrank.com/challenges/grading/problem?isFullScreen=true"
+}
