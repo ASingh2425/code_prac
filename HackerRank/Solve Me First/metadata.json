@@ -1,0 +1,9 @@
+{
+  "code": "\n\ndef solveMeFirst(a,b):\n    sum=a+b\n    return sum\n\n\nnum1 = int(input())\nnum2 = int(input())\nres = solveMeFirst(num1,num2)\nprint(res)\n",
+  "difficulty": "",
+  "language": "unknown",
+  "platform": "HackerRank",
+  "problemName": "Solve Me First",
+  "submissionDate": "2026-09-08T07:58:50.825Z",
+  "submissionUrl": "https://www.hackerrank.com/challenges/solve-me-first/problem?isFullScreen=true"
+}
